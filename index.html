@@ -17,49 +17,60 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;display=swap" rel="stylesheet">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="logo-container">
-            <a class="logo" href="/index.html">
-                <img src="assest/CB Logo.png" alt="CB Logo" class="logo-icon" width="50px" />
-                <span class="logo-text">Chathunga Bimsara</span>
-            </a>
-        </div>
+    <header class="header">
 
-        <nav>
-            <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <div class="logo-container">
+            <img src="assest/CB Logo.png" alt="CB Logo" class="logo-img">
+        </div>
+        
+        <a class="logo" href="#hero">
+            Chathunga <span class="logo-text">Bimsara</span>
+        </a>
+        
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#hero" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#work">Work</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
         </nav>
 
-        <label class="mode">
-            <input type="checkbox" checked="checked" id="darkModeButton" />
-            <i class="fa-solid fa-sun"></i>
-            <i class="fa-solid fa-moon"></i>
-        </label>
+        <div class="list-darkmode-menu">
+            <label class="mode">
+                <input type="checkbox" checked="checked" id="darkModeButton" />
+                <i class="fa-solid fa-sun"></i>
+                <i class="fa-solid fa-moon"></i>
+            </label>
+        </div>
+        
     </header>
-
-    <main>
         <!-- Home -->
-        <section id="hero">
+        <section class="hero" id="hero">
             <div class="hero-content">
                 <h3>Hello ! It's Me</h3>
                 <h1>Chathunga Bimsara</h1>
-                <h2>And I'm a </h2>
+                <h2>And I'm a 
+                    <span style="--i:4;" data-text="Software Engineer.">Software Engineer.</span>
+                    <span style="--i:3;" data-text="Frontend Developer.">Frontend Developer.</span>
+                    <span style="--i:2;" data-text="Full-Stack Developer.">Full-Stack Developer.</span>
+                    <span style="--i:1;" data-text="Content Creator.">Content Creator.</span>
+                </h2>
 
                 <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/chathunga-bimsara-02a728387/" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
-                    <a href="https://github.com/chathunga2007" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a>
-                    <a href="https://web.facebook.com/profile.php?id=61571681231357" target="_blank"><i class="fa-brands fa-facebook fa-2x"></i></a>
-                    <a href="https://www.youtube.com/@chathungabimsara2007" target="_blank"><i class="fa-brands fa-youtube fa-2x"></i></a>
-                    <a href="https://www.instagram.com/chathunga200711/" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>
-                    <a href="https://x.com/ChathungaB2007" target="_blank"><i class="fa-brands fa-x-twitter fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/chathunga-bimsara-02a728387/" target="_blank" ><i class="fa-brands fa-linkedin fa-1.5x" ></i></a>
+                    <a href="https://github.com/chathunga2007" target="_blank"><i class="fa-brands fa-github fa-1x"></i></a>
+                    <a href="https://web.facebook.com/profile.php?id=61571681231357" target="_blank"><i class="fa-brands fa-facebook fa-1x"></i></a>
+                    <a href="https://www.youtube.com/@chathungabimsara2007" target="_blank"><i class="fa-brands fa-youtube fa-1x"></i></a>
+                    <a href="https://www.instagram.com/chathunga200711/" target="_blank"><i class="fa-brands fa-instagram fa-1x"></i></a>
+                    <a href="https://x.com/ChathungaB2007" target="_blank"><i class="fa-brands fa-x-twitter fa-1x"></i></a>
                 </div><br></br>
 
                 <a href="assest/Chathunga Bimsara CV.pdf" download="My CV">
@@ -68,10 +79,13 @@
             </div>
 
             <div class="hero-image">
-                <div class="image-glow-wrapper">
-                    <img src="assest/My photo.png" alt="My Photo" width="300x">
+                <div class="image-box">
+                    <div class="image-item">
+                        <img src="assest/My photo.png" alt="My Photo">
+                    </div>
                 </div>
             </div>
+
             <div class="arrow bounce"><i class="fa-solid fa-angle-down"></i></div>
         </section>
 
@@ -80,9 +94,7 @@
             <h1 class="heading">Who <span>I am</span></h1>
             <div id="about-grid">
                 <div id="about-img">
-                    <div class="overlay">
-                        <img src="assest/My Photo 2.jpg" width="300px" />
-                    </div>
+                    <img src="assest/My Photo 2.jpg" width="300px" />
                 </div>
 
                 <div id="about-text">
@@ -100,20 +112,24 @@
                         as a developer.
                     </p>
                     <p>Looking forward to learning, building, and connecting with like-minded people in the 
-                        tech world! 🚀
+                        tech world!
                     </p><br/>
-
-                    <div class="social-icons">
-                        <a href="https://github.com/chathunga2007" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a>
-                        <a href="https://www.linkedin.com/in/chathunga-bimsara-02a728387/" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
-
-                        <a href="#work">
-                            <button class="btn-section" type="menu">Projects</button> 
-                        </a>
-                        <a href="#contact">
-                            <button class="btn-section" type="menu">Contact</button>
-                        </a>
-                    </div><br />
+                    <div class="area">
+                        <div class="social-icons">
+                            <a href="https://github.com/chathunga2007" target="_blank"><i class="fa-brands fa-github fa-1x"></i></a>
+                            <a href="https://www.linkedin.com/in/chathunga-bimsara-02a728387/" target="_blank"><i class="fa-brands fa-linkedin fa-1x"></i></a>
+                        </div>
+                        <div class="btn">
+                            <a href="#work">
+                                <button class="pro-btn" type="menu">Projects</button> 
+                            </a>
+                            <a href="#contact">
+                                <button class="contact-btn" type="menu">Contact</button>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <br />
                 </div>
             </div>
         </section>
@@ -314,25 +330,28 @@
 
         <!-- Gallery -->
         <section class="gallery" id="gallery">
-            <h2>My <span>Galley</span></h2>
+            <h2>My <span>Gallery</span></h2>
             <p>Some of my pictures</p>
-            <div class="image">
-                <img src="assest/Gallery/1.JPG" alt="" width="300px">
-                <img src="assest/Gallery/2.JPG" alt="" width="300px">
-                <img src="assest/Gallery/3.JPG" alt="" width="300px">
-                <img src="assest/Gallery/4.JPG" alt="" width="300px">
-                <img src="assest/Gallery/5.JPG" alt="" width="300px">
-                <img src="assest/Gallery/6.JPG" alt="" width="300px">
-                <img src="assest/Gallery/7.JPG" alt="" width="300px">
-                <img src="assest/Gallery/8.JPG" alt="" width="300px">
-                <img src="assest/Gallery/9.JPG" alt="" width="300px">
+
+            <!-- Neon Glow Masonry Grid (ඔය රූපයටම ගැලපෙනවා) -->
+            <div class="gallery-grid">
+                <img src="assest/Gallery/1.JPG" alt="Gallery 1">
+                <img src="assest/Gallery/2.JPG" alt="Gallery 2">
+                <img src="assest/Gallery/3.JPG" alt="Gallery 3">
+                <img src="assest/Gallery/4.JPG" alt="Gallery 4">
+                <img src="assest/Gallery/5.JPG" alt="Gallery 5">
+                <img src="assest/Gallery/6.JPG" alt="Gallery 6">
+                <img src="assest/Gallery/7.JPG" alt="Gallery 7">
+                <img src="assest/Gallery/8.JPG" alt="Gallery 8">
+                <img src="assest/Gallery/9.jpg" alt="Gallery 9">
+                <img src="assest/Gallery/10.jpg" alt="Gallery 10">
             </div>
         </section>
 
         <!-- Contact -->
         <section id="contact">
             <h1 class="heading">Contact <span>Me</span></h1>
-            <p class="sub-heading">Feel free to connect with me! Reach out for inquiries, collaboration, or support</p>
+            <h5>Feel free to connect with me! Reach out for inquiries, collaboration, or support</h5>
             <div class="email-container">
                 <i id="email-icon" class="fa-regular fa-envelope"></i>
                 <input type="text" id="name" placeholder="Name :" />
@@ -343,7 +362,7 @@
             </div>
 
             <h1 class="heading">Let's <span>Talk</span></h1>
-            <p class="sub-heading">Reach out below platforms to ask questions about my work or share your ideas.</p>
+            <h5>Reach out below platforms to ask questions about my work or share your ideas.</h5>
             <div class="social-icons">
                 <ul class="wrapper">
                     <a href="https://www.linkedin.com/in/chathunga-bimsara-02a728387/" target="_blank">
@@ -442,7 +461,7 @@
                     </iframe>
                 </div>
             </div>
-            <p class="sub-heading">Looking forward to connecting with you!</p>
+            <p class="con-foot">Looking forward to connecting with you!</p>
         </section>
     </main>
 
@@ -458,7 +477,9 @@
                 <a href="https://x.com/ChathungaB2007" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
             </div>
         </div>
-        <h5>© 2026 Chathunga Bimsara | All rights reserved.</h5>
+        <p>© 2026 Chathunga Bimsara | All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
