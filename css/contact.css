@@ -1,0 +1,199 @@
+@import url('css/style.css');
+
+#contact {
+    padding: 100px 5%;
+    background-color: var(--bg-color);
+}
+
+h5 {
+    text-align: center;
+    color: #00ccff;
+    margin-bottom: 60px;
+    font-size: 1.2rem;
+}
+
+.email-container {
+    max-width: 600px;
+    margin: 0 auto 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+}
+
+#email-icon {
+    font-size: 3rem;
+    color: var(--accent-color);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 15px;
+    background: var(--contact-bg);
+    color: var(--text-color);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    box-shadow: 0 0 0 2px var(--accent-color);
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.heading {
+    text-align: center;
+}
+
+.wrapper {
+    display: inline-flex;
+    justify-content: center;
+    gap: 15px;
+    list-style: none;
+    margin-bottom: 60px;
+    padding-left: 522px;
+}
+
+.wrapper .icon {
+    position: relative;
+    background: var(--card-bg);
+    border-radius: 50%;
+    padding: 15px;
+    margin: center;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    box-shadow: 0 10px 10px var(--shadow-color);
+    transition: all 0.3s ease;
+}
+
+.wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #fff;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 100%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    background: #fff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .linkedin:hover,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip::before {
+    background: #0077b5;
+    color: #fff;
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+    background: #333;
+    color: #fff;
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+    background: #1877f2;
+    color: #fff;
+}
+
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+    background: #ff0000;
+    color: #fff;
+}
+
+.wrapper .x:hover,
+.wrapper .x:hover .tooltip,
+.wrapper .x:hover .tooltip::before {
+    background: #000000;
+    color: #fff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+    background: linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    color: #fff;
+}
+
+.contact-container {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-item {
+    background: var(--contact-bg);
+    padding: 20px 25px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.1rem;
+    box-shadow: 0 0 20px rgba(0,255,157,0.15);
+}
+
+.contact-item i {
+    font-size: 1.8rem;
+    color: var(--accent-color);
+}
+
+.contact-item iframe {
+    width: 100%;
+    height: 280px;
+    border-radius: 15px;
+    border: none;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px var(--shadow-color);
+}
+
+.con-foot {
+    text-align: center;
+    margin-top: 50px;
+}

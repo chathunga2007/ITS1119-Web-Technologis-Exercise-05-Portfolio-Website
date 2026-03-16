@@ -1,0 +1,55 @@
+@import url('css/style.css');
+
+.gallery {
+    padding: 120px 8%;
+    background: var(--bg-color);
+    text-align: center;
+    overflow: hidden;
+}
+
+.gallery h1 {
+    font-size: 4rem;
+    color: var(--text-color);
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.gallery h1 span {
+    color: var(--accent-color);
+}
+
+.gallery h5 {
+    text-align: center;
+    color: #00ccff;
+    margin-bottom: 60px;
+    font-size: 1.2rem;
+}
+
+.gallery-grid {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 15px;
+    column-count: 3;
+    column-gap: 30px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 22px;
+    border: 6px solid var(--accent-color);
+    box-shadow: 
+        0 0 15px var(--accent-color),
+        0 0 30px var(--accent-color),
+        0 0 50px var(--accent-color);
+    transition: all 0.4s ease;
+    break-inside: avoid;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.04) translateY(-10px);
+    box-shadow: 
+        0 0 25px var(--accent-color),
+        0 0 45px var(--accent-color),
+        0 0 70px var(--accent-color);
+}

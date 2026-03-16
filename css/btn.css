@@ -1,0 +1,23 @@
+.btn-section {
+    background-image: linear-gradient(to right, #00C9FF 0%, #92FE9D 51%, #00C9FF 100%);
+    margin: 10px;
+    display: flex;
+    padding: 15px 45px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: bold;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 50px;
+    display: block;
+    outline: none;
+    border: none;
+}
+
+.btn-section:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}

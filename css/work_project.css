@@ -1,0 +1,103 @@
+@import url('css/style.css');
+
+/*Work Projects Section*/
+.work-projects {
+    padding: 5rem 5%;
+    background: var(--bg-color);
+}
+
+.work-projects h1 {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.work-projects h5 {
+    text-align: center;
+    color: #00ccff;
+    margin-bottom: 60px;
+    font-size: 1.2rem;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.project-box {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 0 40px #00ffd06c;
+    transition: all 0.4s;
+}
+
+.project-box:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 0 70px #00ffd0;
+}
+
+.project-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.6s;
+}
+
+.project-box:hover img {
+    transform: scale(1.1);
+}
+
+.project-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, rgb(0, 0, 0));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    transform: translateY(70%);
+    transition: all 0.5s;
+    opacity: 0;
+    font-weight: bold;
+    font-size: 2.1rem;
+
+    p {
+        color: rgb(255, 255, 255);
+        font-size: 1.2rem;
+    }
+}
+
+.project-box:hover .project-layer {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.project-layer h3 {
+    color: #00ffd0;
+    margin-bottom: 8px;
+}
+
+.project-layer a {
+    background-color: black;
+    color: #ffffff;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    transition: 0.3s;
+}

@@ -1,0 +1,108 @@
+@import url('css/style.css');
+
+.heading {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.heading span {
+    color: var(--accent-color);
+}
+
+.sub-heading {
+    text-align: center;
+    border-bottom: 3px solid transparent;
+    margin-bottom: 2rem;
+}
+
+#about {
+    padding: 5rem 5%;
+    background-color: var(--bg-color);
+}
+
+#about-grid{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 60px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#about-img img{
+    width: 30rem;
+    height: 35rem;
+    object-fit: cover;
+    display: block;
+    border-radius: 50%;
+    transition: 0.5s;
+    margin-bottom: 14px;
+}
+
+#about-img img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #1db683,
+                0 0 50px #1db683;
+}
+
+#about-text {
+    flex: 1 1 400px;
+    min-width: 300px;
+    position: relative;
+}
+
+#about-text h1 {
+    font-size: 4rem;
+    position: relative;
+    margin-right: 478px;
+    margin-bottom: 25px;
+}
+
+#about-text h3 {
+    font-size: 1.5rem;
+    position: relative;
+    margin-bottom: 1em;
+
+}
+
+#about-text p {
+    font-size: 1.2rem;
+    margin-bottom: 1.9rem;
+    text-align: justify;
+}
+
+.area {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.btn {
+    display: flex;
+    margin-top: 20px;
+}
+
+.about-details {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    padding-right: 10rem;
+}
+  
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.1rem;
+}
+  
+.detail-label {
+    font-weight: 800;
+    color: var(--text-color);
+    margin-right: 1rem;
+}
+  
+.detail-value {
+    color: var(--text-color);
+}

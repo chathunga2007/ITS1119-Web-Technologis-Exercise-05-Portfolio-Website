@@ -1,0 +1,69 @@
+:root {
+    /* Light Mode Colors (Default) */
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --header-bg: #ffffff;
+    --card-bg: #ffffff;
+    --input-bg: #ffffff;
+    --input-text: #000000;
+    --accent-color: #48dbca;
+    --accent-hover: #48dbca;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --timeline-line: #ffffff;
+    --contact-bg: #cfc9c9;
+}
+
+body.dark-mode {
+    /* Dark Mode Colors */
+    --bg-color: #0b0b0b;
+    --text-color: #ffffff;
+    --header-bg: #111111;
+    --card-bg: #1a1a1a;
+    --input-bg: #2a2a2a;
+    --input-text: #ffffff;
+    --accent-color: #00FFD0;
+    --accent-hover: #00FFD0;
+    --shadow-color: rgba(0, 0, 0, 0.5);
+    --timeline-line: #333333;
+    --contact-bg: #2a2a2a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.4s ease, color 0.4s ease;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+a {
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+h1 {
+    font-family: 'Times New Roman', serif;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'comic sans ms', cursive, sans-serif;
+    line-height: 1.2;
+    font-weight: 600;
+}
