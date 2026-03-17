@@ -6,16 +6,20 @@
     .hero .container {
         padding: 120px 5%;
     }
+
     .hero-content h1 {
         font-size: 50px;
     }
+
     .hero-content h3 {
         font-size: 28px;
     }
+
     .hero-image .image-box {
         width: 350px;
         height: 350px;
     }
+
     .hero-image .image-box::before,
     .hero-image .image-box::after {
         width: 350px;
@@ -25,10 +29,12 @@
     #about-grid {
         gap: 30px;
     }
+
     #about-text h1 {
         font-size: 3rem;
         margin-right: 0;
     }
+
     .about-details {
         padding-right: 2rem;
     }
@@ -36,15 +42,18 @@
     .timeline::before {
         left: 40px;
     }
+
     .timeline-item {
         width: 100%;
         padding-left: 70px;
         padding-right: 25px;
     }
+    
     .timeline-item.left,
     .timeline-item.right {
         left: 0;
     }
+
     .timeline-item::after {
         left: 28px !important;
         right: auto !important;
@@ -55,9 +64,7 @@
     .header {
         padding: 15px 3%;
     }
-    #menu-icon {
-        display: block;
-    }
+
     .navbar {
         position: absolute;
         top: 100%;
@@ -67,17 +74,20 @@
         box-shadow: 0 10px 20px var(--shadow-color);
         flex-direction: column;
         text-align: center;
-        padding: 20px 0;
+        padding: 50px 0;
         display: none;
-        z-index: 999;
+        z-index: 1;
     }
+
     .navbar.active {
         display: flex;
     }
+
     .navbar a {
         margin: 10px 0;
         font-size: 1.1rem;
     }
+
     .list-darkmode-menu {
         margin-top: 10px;
     }
@@ -87,19 +97,24 @@
         padding-top: 100px;
         text-align: center;
     }
+
     .hero-content h1 {
         font-size: 40px;
     }
+
     .hero-content h2 {
         font-size: 24px;
     }
+
     .social-icons {
         justify-content: center;
     }
+
     .hero-image .image-box {
         width: 280px;
         height: 280px;
     }
+
     .hero-image .image-box::before,
     .hero-image .image-box::after {
         width: 280px;
@@ -109,29 +124,36 @@
     #about {
         padding: 3rem 5%;
     }
+
     #about-grid {
         grid-template-columns: 1fr;
     }
+
     #about-img img {
         width: 80%;
         height: auto;
         max-width: 300px;
         margin: 0 auto 20px auto;
     }
+
     #about-text {
         text-align: center;
     }
+
     #about-text p {
         text-align: center;
     }
+    
     .area {
         justify-content: center;
         flex-wrap: wrap;
         gap: 20px;
     }
+
     .btn {
         justify-content: center;
     }
+
     .about-details {
         padding-right: 0;
         justify-content: center;
@@ -161,23 +183,28 @@
     .hero-content h1 {
         font-size: 30px;
     }
+
     .hero-content h3 {
         font-size: 22px;
     }
+
     .hero-content h2 {
         font-size: 20px;
     }
+
     .hero-image .image-box {
-        width: 220px;
-        height: 220px;
+        width: 150px;
+        height: 150px;
     }
+
     .hero-image .image-box::before,
     .hero-image .image-box::after {
-        width: 220px;
-        height: 220px;
+        width: 300px;
+        height: 300px;
     }
+
     .arrow {
-        bottom: 20px;
+        bottom: -8px;
     }
 
     .gallery-grid {
@@ -187,9 +214,11 @@
     .timeline::before {
         left: 15px;
     }
+
     .timeline-item {
         padding-left: 45px;
     }
+
     .timeline-item::after {
         left: 5px !important;
         width: 16px;
@@ -203,5 +232,13 @@
     
     .assignment-box {
         padding: 30px 15px;
+    }
+    
+    .footer-container {
+        padding: 0 10px;
+    }
+
+    footer  h1 {
+        width: auto;
     }
 }
