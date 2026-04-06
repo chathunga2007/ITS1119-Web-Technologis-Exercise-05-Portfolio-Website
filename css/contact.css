@@ -38,13 +38,13 @@ input, textarea {
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-input:focus, textarea:focus {
+input:hover, textarea:hover {
     box-shadow: 0 0 0 2px var(--accent-color);
 }
 
 textarea {
     height: 150px;
-    resize: vertical;
+    resize: none;
 }
 
 .heading {

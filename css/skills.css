@@ -35,7 +35,9 @@
     box-shadow: 0 0 25px rgba(255,255,255,0.1);
 }
 
-.skill img { box-shadow: 0 0 35px var(--accent-color); }
+.skill img { 
+    box-shadow: 0 0 35px var(--accent-color); 
+}
 
 .skill img:hover {
     transform: scale(1.15) rotate(8deg);
