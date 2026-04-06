@@ -22,8 +22,8 @@
 }
 
 #about-grid{
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    display: flex;
+    justify-content: center;
     gap: 60px;
     align-items: center;
     max-width: 1200px;
