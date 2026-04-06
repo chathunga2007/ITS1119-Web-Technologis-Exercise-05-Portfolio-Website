@@ -1,19 +1,4 @@
 :root {
-    /*Light Color*/
-    --bg-color: #ffffff;
-    --text-color: #000000;
-    --header-bg: #ffffff;
-    --card-bg: #ffffff;
-    --input-bg: #ffffff;
-    --input-text: #000000;
-    --accent-color: #48dbca;
-    --accent-hover: #48dbca;
-    --shadow-color: rgba(0, 0, 0, 0.1);
-    --timeline-line: #ffffff;
-    --contact-bg: #cfc9c9;
-}
-
-body.dark-mode {
     /* Dark Colors */
     --bg-color: #0b0b0b;
     --text-color: #ffffff;
@@ -26,6 +11,21 @@ body.dark-mode {
     --shadow-color: rgba(0, 0, 0, 0.5);
     --timeline-line: #333333;
     --contact-bg: #2a2a2a;
+}
+
+body.dark-mode {
+    /*Light Color*/
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --header-bg: #ffffff;
+    --card-bg: #ffffff;
+    --input-bg: #ffffff;
+    --input-text: #000000;
+    --accent-color: #48dbca;
+    --accent-hover: #48dbca;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --timeline-line: #ffffff;
+    --contact-bg: #cfc9c9;
 }
 
 * {
