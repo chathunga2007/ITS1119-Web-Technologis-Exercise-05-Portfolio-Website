@@ -1,5 +1,5 @@
 :root {
-    /* Light Mode Colors (Default) */
+    /*Light Color*/
     --bg-color: #ffffff;
     --text-color: #000000;
     --header-bg: #ffffff;
@@ -14,7 +14,7 @@
 }
 
 body.dark-mode {
-    /* Dark Mode Colors */
+    /* Dark Colors */
     --bg-color: #0b0b0b;
     --text-color: #ffffff;
     --header-bg: #111111;
