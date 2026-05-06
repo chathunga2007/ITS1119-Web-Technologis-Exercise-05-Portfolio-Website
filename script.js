@@ -48,4 +48,54 @@ document.addEventListener('DOMContentLoaded', function () {
             localStorage.setItem('theme', 'light');
         }
     });
+
+    // Contact Form Logic
+    const contactForm = document.getElementById("contact-form");
+    const submitBtn = document.getElementById("submitBtn");
+    const formNote = document.getElementById("formNote");
+
+    if (contactForm && submitBtn && formNote) {
+        contactForm.addEventListener("submit", async (e) => {
+            e.preventDefault();
+
+            const formData = new FormData(contactForm);
+
+            // Loading state
+            submitBtn.innerHTML = 'Sending... <i class="fas fa-spinner fa-spin"></i>';
+            submitBtn.disabled = true;
+
+            try {
+                const response = await fetch(
+                    "https://formsubmit.co/ajax/wggachathungabimsara2007@gmail.com",
+                    {
+                        method: "POST",
+                        body: formData,
+                    }
+                );
+
+                const data = await response.json();
+
+                if (data.success === "true") {
+                    formNote.textContent = "✓ Message sent successfully!";
+                    formNote.style.color = "lime";
+                    contactForm.reset();
+                } else {
+                    throw new Error();
+                }
+
+            } catch (error) {
+                formNote.textContent = "✗ Failed to send message!";
+                formNote.style.color = "red";
+            } finally {
+                // Restore button state
+                submitBtn.innerHTML = 'Submit';
+                submitBtn.disabled = false;
+                
+                // Clear message after 5 seconds
+                setTimeout(() => {
+                    formNote.textContent = "";
+                }, 5000);
+            }
+        });
+    }
 });
