@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // Contact Form Logic
+    // Contact
     const contactForm = document.getElementById("contact-form");
     const submitBtn = document.getElementById("submitBtn");
     const formNote = document.getElementById("formNote");
@@ -60,7 +60,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
             const formData = new FormData(contactForm);
 
-            // Loading state
             submitBtn.innerHTML = 'Sending... <i class="fas fa-spinner fa-spin"></i>';
             submitBtn.disabled = true;
 
@@ -87,11 +86,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 formNote.textContent = "✗ Failed to send message!";
                 formNote.style.color = "red";
             } finally {
-                // Restore button state
                 submitBtn.innerHTML = 'Submit';
                 submitBtn.disabled = false;
                 
-                // Clear message after 5 seconds
                 setTimeout(() => {
                     formNote.textContent = "";
                 }, 5000);

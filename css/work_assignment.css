@@ -20,35 +20,89 @@
 
 .assignment-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-    max-width: 1100px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .assignment-box {
+    position: relative;
+    height: 250px;
     background: linear-gradient(145deg, #4a2c7d, #2c1650);
-    padding: 45px 20px;
     border-radius: 20px;
-    text-align: center;
-    color: #fff;
-    font-size: 1.25rem;
-    font-weight: 600;
-    min-height: 160px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    transition: all 0.4s ease;
+    border: 2px solid transparent;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
-    transition: all 0.4s;
-    border: 2px solid transparent;
+}
 
-    .assignment-layer a{
-        color: white;
-    }
+.assignment-box img {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+.assignment-box:hover img {
+    transform: scale(1.1) rotate(5deg);
+    opacity: 0.2;
+}
+
+.assignment-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    transform: translateY(100%);
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+
+.assignment-box:hover .assignment-layer {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .assignment-box:hover {
-    transform: translateY(-12px) scale(1.03);
-    box-shadow: 0 0 40px var(--accent-color);
-    border-color: var(--accent-color);
+    transform: translateY(-10px);
+    border-color: #00ccff;
+    box-shadow: 0 0 30px rgba(0, 204, 255, 0.4);
+}
+
+.assignment-layer p {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.assignment-layer a {
+    background: #00ccff;
+    color: #000;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.assignment-layer a:hover {
+    background: #fff;
+    transform: scale(1.1);
 }
